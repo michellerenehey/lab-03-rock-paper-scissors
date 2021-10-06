@@ -8,7 +8,7 @@ export function didUserWin(userChoice, computerChoice) {
     } else if (userChoice === 'rock' && computerChoice === 'scissors') {
         return 'win'; 
     } else if (userChoice === 'paper' && computerChoice === 'rock') {
-        return 'lose'; 
+        return 'win'; 
     } else if (userChoice === 'scissors' && computerChoice === 'paper') {
         return 'win'; 
     } else {
