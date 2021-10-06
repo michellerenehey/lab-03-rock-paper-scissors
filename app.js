@@ -7,6 +7,7 @@ const resultHolder = document.getElementById('result-holder');
 const winsSpan = document.getElementById('wins-span');
 const lostSpan = document.getElementById('lost-span');
 const tiedSpan = document.getElementById('tied-span');
+const resultSection = document.getElementById('result-section'); 
 
 // set STATE
 let wins = 0; 
@@ -18,6 +19,10 @@ let ties = 0;
 // EVENT listener
 button.addEventListener('click', () => {
   const selected = document.querySelector('input[type=radio]:checked'); 
+  if (!selected) {
+    alert('Tricky tricky! You must select an option before continuing!')
+  };  
+  resultSection.style.display = "block";
   const userChoice = selected.value; 
   const computerChoice = getRandomPick(); 
   computerPickSpan.textContent = computerChoice;

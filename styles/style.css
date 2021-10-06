@@ -32,3 +32,6 @@ button {
     margin: 20px;
 }
 
+.result-section{
+    display: none; 
+}
