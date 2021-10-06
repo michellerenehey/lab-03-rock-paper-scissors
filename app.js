@@ -20,5 +20,5 @@ button.addEventListener('click', () => {
   const selected = document.querySelector('input[type=radio]:checked'); 
   const userChoice = selected.value; 
   const computerChoice = getRandomPick(); 
-  console.log(getRandomPick); 
+  
 }); 
