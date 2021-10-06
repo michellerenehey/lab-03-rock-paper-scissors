@@ -1,7 +1,9 @@
+// function to pick a random game play 
 export function getRandomPick(){
     return ['rock', 'paper', 'scissors'][Math.floor(Math.random()*3)];
 }
 
+// function to compare user choice with random game play
 export function didUserWin(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         return 'tie'; 

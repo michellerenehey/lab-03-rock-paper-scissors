@@ -1,6 +1,7 @@
+//import functions
 import { didUserWin, getRandomPick } from "./utils.js";
 
-// grab DOM elements
+// grab DOM elements from HTML
 const button = document.getElementById('button'); 
 const computerPickSpan = document.getElementById('computer-pick-span'); 
 const resultHolder = document.getElementById('result-holder'); 
@@ -13,8 +14,8 @@ const resultSection = document.getElementById('result-section');
 let wins = 0; 
 let losses = 0; 
 let ties = 0; 
-// userChoice will generate with button click
-// computerChoice will generate with button click
+// dev note: userChoice will generate with button click
+// dev note: computerChoice will generate with button click
 
 // EVENT listener
 button.addEventListener('click', () => {
