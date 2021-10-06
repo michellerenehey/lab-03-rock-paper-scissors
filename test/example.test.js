@@ -1,6 +1,6 @@
 import { didUserWin } from "../utils.js";
 
-// user rock, computer rock - tie
+// //user rock, computer rock - tie
 // user rock, computer paper - lose / false
 // user rock, computer scissors - win / true
 // user paper, computer paper - tie
@@ -26,8 +26,14 @@ test('user rock, computer rock', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('user rock, computer rock', (expect) => {
-    const expected = 'tie';
-    const actual = didUserWin('rock', 'rock');
+test('user rock, computer paper', (expect) => {
+    const expected = 'lose';
+    const actual = didUserWin('rock', 'paper');
+    expect.equal(actual, expected);
+});
+
+test('user rock, computer scissors', (expect) => {
+    const expected = 'win';
+    const actual = didUserWin('rock', 'scissors');
     expect.equal(actual, expected);
 });
