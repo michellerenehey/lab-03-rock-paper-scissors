@@ -2,6 +2,32 @@
 
 ## Making a plan
 
+### HTML
+* h1 header 
+* p to explain the rules of the game 
+* input radio buttons: rock, paper, scissors (with images)
+* submit button 
+* text field: "computer chose R/P/S"
+* text field: you win/lose/tie
+* text field: you've won X number of times
+* text field: you've lost X number of times
+* text field: you've tied X number of times
+
+### STATE
+* number of wins: 0 
+* number of losses: 0 
+* user choice (will generate with button click)
+* computerChoice (will generate with button click)
+
+
+### EVENT
+on button click: 
+    - set a const variable selected = document.querySelector('input[type=radio:checked'])
+    - create a didUserWin function IN SEPARATE FOLDER and link it in with import 
+    - set a variable userChoice = selected.value
+    - create a computerChoice function IN A SEPARATE FOLDER and link it in with import
+    - if (didUserWin(userChoice, computerChoice))
+
 (bolded steps are mandatory, unbolded are for more advanced projects)
 
 1) **Make a drawing of your app. Simple "wireframes"**
