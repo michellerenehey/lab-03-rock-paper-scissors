@@ -10,11 +10,13 @@ const lostSpan = document.getElementById('lost-span');
 const tiedSpan = document.getElementById('tied-span');
 const resultSection = document.getElementById('result-section'); 
 const resetButton = document.getElementById('button-reset'); 
+const resetSpan = document.getElementById('reset-span');
 
 // set STATE
 let wins = 0; 
 let losses = 0; 
 let ties = 0; 
+let resets = 0;
 // dev note: userChoice will generate with button click
 // dev note: computerChoice will generate with button click
 
@@ -44,6 +46,7 @@ button.addEventListener('click', () => {
 }); 
 
 resetButton.addEventListener('click', () => {
+    resets++; 
     wins = 0;
     losses = 0; 
     ties = 0; 
@@ -51,5 +54,6 @@ resetButton.addEventListener('click', () => {
     resultHolder.textContent = ''; 
     winsSpan.textContent = '0'; 
     tiedSpan.textContent = '0';
-    lostSpan.textContent = '0';  
+    lostSpan.textContent = '0'; 
+    resetSpan.textContent = resets; 
 });
