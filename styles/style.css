@@ -41,9 +41,9 @@ button {
     border-radius: 20px;
 }
 
-.button-section {
+/* .button-section {
     text-align: center;
-}
+} */
 
 button:hover {
     cursor: pointer;
