@@ -5,6 +5,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.top {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio-input {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
 input[type=radio]{
     display: none;
 }
@@ -14,7 +26,7 @@ input[type=radio]:checked + img {
     transform: scale(1.25);
 }
 
-input[type=radio]:hover {
+input[type=radio]:hover + img {
     cursor: pointer;
 }
 
@@ -26,6 +38,10 @@ button {
     width: 100px;
     padding: 10px;
     margin: 20px;
+}
+
+.button-section {
+    text-align: center;
 }
 
 button:hover {
@@ -42,7 +58,11 @@ button:hover {
 
 #result-holder {
     color: #EBBAB9; 
-    font-weight: bold;
+    font-weight:900;
+    background-color: lightslategray;
+    width: 200px;
+    text-align: center;
+    font-size: larger;
 }
 
 footer {

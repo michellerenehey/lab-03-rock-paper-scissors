@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <header>
+    <header class="top">
+        <h1>Rock Paper Scissors</h1>
         <p>Welcome to the game. Remember how to play?</p>
         <ul>
             <li class="list">ROCK beats scissors</li>
@@ -25,7 +25,7 @@
         </ul>
         <p>Great. Go ahead and click one of the options below!</p>
     </header> 
-    <section id="radio-inputs">
+    <section id="radio-inputs" class = "radio-input">
         <label>
             <input type="radio" name="rps" id="rock" value="rock">
             <img id="rock-image" src="./assets/rock-2.png" alt="hand as rock">
@@ -39,7 +39,9 @@
             <img id="scissors-image" src="./assets/scissors-2.png" alt="hand as scissors">
         </label>
     </section>
-    <button id="button">PLAY</button>
+    <section class="button-section">
+        <button id="button">PLAY</button>
+    </section>
     <section id="result-section" class="result-section">
         <p>The computer chose <span id="computer-pick-span"></span>!</p>
         <p id="result-holder"></p>
