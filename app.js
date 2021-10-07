@@ -1,5 +1,5 @@
 //import functions
-import { didUserWin, getRandomPick } from "./utils.js";
+import { didUserWin, getRandomPick } from './utils.js';
 
 // grab DOM elements from HTML
 const button = document.getElementById('button'); 

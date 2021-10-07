@@ -1,12 +1,12 @@
 
-describe('Example Test', ()=>{
+describe('playing aorund with how to work with this testing', ()=>{
     before(()=>{
         cy.visit('/');
     });
 
     describe('HTML elements', ()=>{   
-        it('contains the alchemy logo', ()=>{
-            cy.get('.main-logo').should('be.visible');
+        it('contains an h1', ()=>{
+            cy.get('h1').should('be.visible');
         });
     });
 });
