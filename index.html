@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
     <title>Rock! Paper! Scissors! </title>
 </head>
 
@@ -15,33 +19,35 @@
     <header>
         <p>Welcome to the game. Remember how to play?</p>
         <ul>
-            <li>ROCK beats scissors</li>
-            <li>PAPER beats rock</li>
-            <li>SCISSORS beats paper</li>
+            <li class="list">ROCK beats scissors</li>
+            <li class="list">PAPER beats rock</li>
+            <li class="list">SCISSORS beats paper</li>
         </ul>
+        <p>Great. Go ahead and click one of the options below!</p>
     </header> 
     <section id="radio-inputs">
         <label>
             <input type="radio" name="rps" id="rock" value="rock">
-            <img id="rock-image" src="./assets/rock.png" alt="hand as rock">
+            <img id="rock-image" src="./assets/rock-2.png" alt="hand as rock">
         </label>
         <label>
             <input type="radio" name="rps" id="paper" value="paper">
-            <img id="paper-image" src="./assets/paper.png" alt="hand as paper">
+            <img id="paper-image" src="./assets/paper-2.png" alt="hand as paper">
         </label>
         <label>
             <input type="radio" name="rps" id="scissors" value="scissors">
-            <img id="scissors-image" src="./assets/scissors.png" alt="hand as scissors">
+            <img id="scissors-image" src="./assets/scissors-2.png" alt="hand as scissors">
         </label>
     </section>
     <button id="button">PLAY</button>
     <section id="result-section" class="result-section">
         <p>The computer chose <span id="computer-pick-span"></span>!</p>
-        <p id="result-holder">Will show you won/lost/tied.</p>
-        <p> You have won <span id="wins-span"></span> times. </p>
-        <p> You have lost <span id="lost-span"></span> times. </p>
-        <p> You have tied <span id="tied-span"></span> times. </p>
+        <p id="result-holder"></p>
+        <p> You have won <span id="wins-span">0</span> times. </p>
+        <p> You have lost <span id="lost-span">0</span> times. </p>
+        <p> You have tied <span id="tied-span">0</span> times. </p>
     </section>    
+    <footer>Website by <a href="https://www.linkedin.com/in/michellenygren/">Michelle</a> / Images by <a href="https://www.vecteezy.com/vector-art/691494-rock-paper-scissors-icons">the internet</a></footer>
     <script type="module" src="./app.js"></script>
 </body>
 

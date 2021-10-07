@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input[type=radio]{
@@ -9,22 +10,17 @@ input[type=radio]{
 }
 
 input[type=radio]:checked + img {
-    border: 5px solid #fcd247;
+    border: 5px solid #EBBAB9;
     transform: scale(1.25);
 }
 
-#rock-image {
-    width: 20%;
+input[type=radio]:hover {
+    cursor: pointer;
 }
 
-#paper-image{
-    width: 20%;
+img {
+    padding: 10px;
 }
-
-#scissors-image{
-    width: 10%;
-}
-
 
 button {
     width: 100px;
@@ -32,6 +28,23 @@ button {
     margin: 20px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .result-section{
     display: none; 
+}
+
+.list:hover {
+    transform: scale(1.5);
+}
+
+#result-holder {
+    color: #EBBAB9; 
+    font-weight: bold;
+}
+
+footer {
+    font-size: smaller;
 }
