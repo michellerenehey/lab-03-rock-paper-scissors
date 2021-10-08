@@ -11,6 +11,11 @@ body {
     align-items: center;
 }
 
+.instructions {
+    margin: 20px;
+    padding: 20px;
+}
+
 .radio-input {
     display: flex; 
     flex-direction: row;
@@ -24,6 +29,7 @@ input[type=radio]{
 input[type=radio]:checked + img {
     border: 5px solid #EBBAB9;
     transform: scale(1.25);
+    padding: 20px;
 }
 
 input[type=radio]:hover + img {
